@@ -330,6 +330,213 @@
 
 
 
-// Chapter 31 task 11
+// Chapter 31 task  11
 
 
+// var dateObj = new Date();
+// document.write("Curent Date: " + dateObj +"<br>");
+// var newD = dateObj.setHours(-1);
+// document.write(newD + new Date());
+
+
+// Chapter 31 task 12
+
+// var a = new Date();
+// document.write(a +"<br>");
+// var b = a.setFullYear(1920);
+// document.write(b);
+
+// Chpter 31 task 13
+
+// var user1 = prompt("Enter your age in number format");
+// var dt = new Date();
+// var v1 = user1*(12*30*1000*60*60*24);
+// var dob = dt+v1;
+// document.write(dob);
+
+
+//  Chapter 31 task 14
+
+// document.write("<h1>K-Electric Bill</h1>" + "<br>" + "<br>");
+// var naame = prompt("Enter customer name..." , "Enter your name...");
+// var units = prompt("Enter number of units consumed..." , "Enter number of units...");
+// document.write("Customer Name: "+ naame +"<br>");
+// var mnth = ["January", "February" , "March" , "April" , "May" , "June" , "July", "August", "September", "October", "November","December"];
+// var daate = new Date();
+// var currntMonth = daate.getMonth();
+// var mnthName = mnth[currntMonth];
+// document.write("Current Month: "+ mnthName +"<br>");
+// document.write("Number of units consumed: "+ units +"<br>");
+// var charges = Number(16);
+// document.write("Charges per unit: " +" "+ charges +"<br>");
+// var mult = units * charges;
+// var lps = Number(350);
+// var gap = mult+lps;
+// document.write("Net Amount Payable (within Due Date): " + mult +"<br>");
+// document.write("Late Payment Surcharge: " + lps +"<br>");
+// document.write("Gross Amount Payable(after Due Date): " + gap + "<br>");
+
+
+// Chapter 35 task 1
+
+// function date() {
+//     return(new Date());
+// }
+// document.write(date());
+
+// Chapter 35 task 2 
+
+// function name(){
+//     var a = prompt(" Enter first name " , "Enter your name");
+//     var b = prompt(" Enter last name " , "Enter your name");
+//     var c = a+" "+b;
+//     return(c);
+// }
+// document.write("Good Morning: "+ name());
+
+// Chapter 35 task 3
+
+//function sum(){
+//     var a = +prompt("Enter first number " , "Enter number");
+//     var b = +prompt("Enter second number " , "Enter number");
+//     var c = Number(a+b);
+//     return(c);
+// }
+// document.write("The sum of both the numbers is: " + sum());
+
+// Chapter 35 task 4
+
+// document.write("<h1>Calculator</h1>" + "<br>" + "<br>");
+// function calc(a , b ,sign){
+//     var a = Number(prompt("Enter first number"));
+//     var b = Number(prompt("Enter second number"));
+//     var sign = prompt("Enter operator ( + , - , x , / )", "Enter any one operator");
+//     if(sign === "+"){
+//         return(a+b);
+//     }
+//     else if(sign === "-"){
+//         return(a-b);
+//     }
+//     else if(sign === "x"){
+//         return(a*b);
+//     }
+//  else if(sign === "/"){
+//      return(a/b);
+//  }
+// }
+// document.write("The result is:  " + calc());
+
+// Chapter 35 task 5
+
+// function sq(a){
+//     var a = Number(5);
+//     var b = a*a;
+//     return(b);
+// }
+// document.write("Square of the argument is: " + sq());
+
+// Chapter 35 task 6
+
+// function fact(){
+//     var d = Number(prompt("Enter a number"));
+//     var  n = d * (d -(d-1)) * (d - (d-2))*1;
+//     return(n);
+// }
+// document.write(fact());
+
+// Chapter 35 task 7
+
+// function count(start,end) {
+//     var start = Number(prompt("Enter a number you want counting to start"));
+//     var end = Number(prompt("Enter a number you want counting to end"));
+//     for(var i = start; i < end; i++){
+//         document.write(i + "<br>");
+//     }
+//     return(i);
+// }
+// document.write(count());
+
+// Chapter 35 task 8
+
+// function hypotenuse(hyp,base,perp) {
+//     function square(a,b,c,d){
+//         var a = Number(prompt("Enter base of right angled triangle"));
+//         var b = Number(prompt("Enter perpendicular of right angled triangle"));
+//         var c = Number((a*a));
+//         var d = Number((b*b));
+//         return(c+d);
+// }
+
+// var hyp = Number(square());
+// var squrt = Math.sqrt(hyp);
+// var whole = Math.floor(squrt);
+// return(whole);
+    
+// }
+// document.write(hypotenuse());
+
+// Chapter 35 task 9
+
+// function area(width, height){
+//     var width = Number(prompt("Enter width of a rectangle: ", "Enter width..."));
+//     var height = Number(prompt("Enter height of a rectangle: ", "Enter height..."));
+//     return(width*height);
+// }
+// document.write("The area of a rectangle is: "+ area());
+
+// Chapter 35 task 10
+
+//  function wordCheck(word,check){
+//     var word = prompt("Enter a word...","Enter word here...");
+//     var check = "";
+//     for(var i = word.length -1; i >= 0; i--){
+//         check += word[i];
+//     }
+//     if(word === check){
+//         document.write(word + " is a palidrome word");
+//     }
+//     else if(word !== check){
+//         document.write(word + " is not a plaindrome word");
+//     }
+//     return("");
+//  }
+//  document.write(wordCheck());
+
+// chapter 35 task 11
+
+//  var i = prompt("Enter a sentence...", "Enter sentence here");
+//   var firstCharacter = i.slice(0, 1);
+//  var otherCharacters = i.slice(1);
+//  firstCharacter = firstCharacter.toUpperCase();
+//  otherCharacters = otherCharacters.toLowerCase();
+//  var cappedCity = firstCharacter + otherCharacters;
+//  var numChars = i.length;
+//  for(var j = 0; j < numChars; j++) {
+//  if(i.slice(i, i + 2) === " ") {
+//  alert("No double spaces!");
+//  document.write("User input: " + i +"<br>");
+//  document.write("Title case:" + cappedCity +"<br>");
+//  }
+// }
+
+// chapter 35 task 12
+
+// chapter 35 task 13
+
+// chapter 35 task 14
+// document.write("<h1>THE GEOMETRIZER:</h1>" +"<br>"+"<br>");
+// function calcCircumference(radius) {
+//     var radius = Number(40);
+//     var pi = Number(3.142);
+//     var now = Number(2*pi*radius);
+//     return(now);
+// }
+//  document.write("The circumference is: " + calcCircumference() +"<br>");
+// function calcArea(radius){
+//     var radius = Number(30);
+//     var pi = Number(3.142);
+//     var r1 = Number((radius*radius));
+//     var then = Number(pi*r1);
+//     return(then);
+// }
+// document.write("The area is: " + calcArea()+"<br>");
